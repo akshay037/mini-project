@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Odometer </title>
+    <link rel="stylesheet" href="odometer-theme-car.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div id="odometer" class="odometer">000000</div>
+        <h2> Subscribers </h2>
+    </div>
+    <script src="odometer.min.js"></script>
+    <script>
+        setTimeout(function(){
+            odometer.innerHTML = 175923;
+        });
+    </script>
+</body>
+</html>
