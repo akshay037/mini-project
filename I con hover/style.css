@@ -1,0 +1,210 @@
+#body{
+    background-color:#292929;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: arial;
+    height: 100vh;
+    
+}
+.title{
+    color: aliceblue;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.r{
+    padding-top: 65px;
+}
+
+.cardbox{
+    perspective: 500px;
+    margin: 15px;
+}
+
+.card{
+    position: relative;
+    border-radius: 5%; /* 모서리 */
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transition: 0.25s ease;
+    box-shadow: 0 30px 30px rgba(0,0,0,0.5);
+    cursor : pointer;
+}
+
+
+/* 카드 색상. 1열 */
+.facebook{
+   background:#3b5998;
+    
+}
+
+.twitter{
+    background:#00aced;
+    
+}
+
+.googleplus{
+    background:#dd4b39;
+
+}
+
+.instagram{
+   background:#bfc8db;
+    
+}
+
+.five{
+    background:#868686;
+    
+}
+
+/* 카드 색상. 2열 */
+
+.chrome{
+    background:#d69d31;
+}
+
+.firefox{
+    background:#d66a31;
+}
+
+.opera{
+    background:#d63131;
+}
+
+.edge{
+    background:#314ad6;  
+}
+
+.safari{
+    background:#6575d1;  
+}
+
+/* 카드 색상. 3열 */
+
+.wordpress{
+    color: black;
+    background: #e3caca;
+}
+
+.tumblr{
+    background:#c6abd9;
+}
+
+.youtubu{
+    background:#ff0000;
+}
+
+.skype{
+    background:#1530c7;  
+}
+
+.vimeo{
+    background:#00e2ff;
+}
+
+/* 카드 색상. 4열 */
+
+.windows{
+    background: #2d45cc;
+}
+
+.apple{
+    background:#b1b1b1;
+}
+
+.linux{
+    background:#000000;
+}
+
+.android{
+    background:#2aba3b;  
+}
+
+.amazon{
+    background:#d67a2c;  
+}
+
+
+/* 카드 색상. 5열 */
+
+.pinterest{
+    background: #e31818;
+}
+
+.git{
+    background:#e5e5e5;
+}
+
+.codepen{
+    background:#b4e83f;
+}
+
+.htmlfive{
+    background:#1a8827;  
+}
+
+.css{
+    background:#177581;
+}
+
+/* 카드 색상. 6열 */
+
+.amason{
+    background: #F69E08;
+}
+
+.github{
+    background:#313131;
+}
+
+.dropbox{
+    background:#007EE5;
+}
+
+.flickr{
+    background:#FF0084;  
+}
+
+.camera{
+    background:#525252;
+}
+
+.card-front , .card-back{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    color: #fff;
+    backface-visibility: hidden;
+    
+}
+
+.card-front{
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.card-back{
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.cardbox:hover .card{
+    transform: rotateY(180deg);
+}
+
+.card-back{
+    transform: rotateY(180deg);
+}
