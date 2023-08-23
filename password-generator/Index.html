@@ -1,0 +1,34 @@
+<html>
+  <body>
+    <link rel="stylesheet" href="style.css">
+    <div class="password-generator">
+      <h1>Password Generator</h1>
+      <p class="password-generator__textbox">Your password will appear here.</p>
+      <div class="password-generator__form-item">
+          <label for="password-length">Password length: <span id="p-length"></span></label>
+          <input class="password-generator__input" type="range" id="password-length" name="theLength" value="10" min="1" max="30"/> 
+      </div>
+      <div class="password-generator__form-item">
+        <label for="uppercase-letters">Include Uppercase</label>
+        <input type="checkbox" name="uppercase" id="uppercase-letters" class="password-generator__checkbox" checked />
+      </div>
+      <div class="password-generator__form-item">
+        <label for="lowercase-letters">Include Lowercase</label>
+        <input type="checkbox" name="lowercase" id="lowercase-letters" class="password-generator__checkbox" />
+      </div>
+      <div class="password-generator__form-item">
+        <label for="numbers">Include Numbers</label>
+        <input type="checkbox" name="numbers" id="numbers" class="password-generator__checkbox" />
+      </div>
+      <div class="password-generator__form-item">
+        <label for="symbols">Include Symbols</label>
+        <input type="checkbox" name="symbols" id="symbols" class="password-generator__checkbox" />
+      </div>
+      <div class="button_container">
+      <button class="password-generator__button">Generate</button>
+        <button class="password-copy__button tooltip" onclick="copyPassword()" onmouseout="outFunc()"><span class="tooltiptext" id="myTooltip">Copy to clipboard</span>Copy</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
