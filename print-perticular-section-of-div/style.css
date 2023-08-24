@@ -1,0 +1,11 @@
+@media print {
+    body *:not(#imp-section):not(#imp-section *){
+        visibility: hidden;
+    }
+    #imp-section{
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+    }
+}
