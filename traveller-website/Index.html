@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Traveller </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h3 id="home" class="logo"> Traveller </h3>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service & Plans</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/moon.png" id="icon">
+        </div>
+        <div class="content">
+            <h1>Time for an <br> <span class="style">Adventure</span></h1>
+            <p>Travel with us to have best experience to live life and enjoy it, <br> So lets being new way of traveling
+                with Traveller</p>
+            <div class="text">
+                <button class="btn">Book Now</button>
+                <div class="social-media">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                </div>
+            </div>
+            <img src="images/logo.png" class="image">
+        </div>
+
+        <div class="content">
+            
+            <h2 id="about" >- About -</h2>
+            <span class="style_about"> Have unforgettable experiences </span>
+
+        </div>
+
+        <div id="service" class="content">
+
+            <h2 id="about" >- Service -</h2>
+
+        </div>
+
+        <div id="contact" class="content">
+
+            <h2 id="about" >- Contact -</h2>
+
+        </div>
+
+    </div>
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "images/sun.png";
+            } else {
+                icon.src = "images/moon.png";
+            }
+        }
+    </script>
+</body>
+
+</html>
